@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# AI Task Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI Task Assistant is a modern web application that combines task management with AI-powered assistance to help you stay organized and productive.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **AI-powered Assistant**: Natural language task creation, reminders, and suggestions
+- **Smart To-Do Lists**: Create, organize, and track tasks with priorities and categories
+- **Focus Mode**: Pomodoro timer to enhance productivity
+- **Calendar View**: Visual representation of your tasks and schedule
+- **Notes & Journal**: Capture your ideas and thoughts
+- **User Dashboard**: Quick overview of your day with stats and upcoming tasks
+- **Dark Mode**: Customize your visual experience
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React, TypeScript, Material-UI
+- **State Management**: Zustand
+- **Routing**: React Router
+- **Date Management**: date-fns, MUI DatePicker
+- **Charts**: Recharts (for analytics)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/ai-task-assistant.git
+   cd ai-task-assistant
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/           # Reusable UI components
+│   ├── assistant/        # AI Assistant components
+│   ├── common/           # Shared components
+│   ├── layout/           # Layout components
+│   ├── tasks/            # Task-related components
+│   ├── calendar/         # Calendar components
+│   └── focus/            # Focus mode components
+├── pages/                # Application pages
+│   ├── auth/             # Authentication pages
+│   ├── Dashboard.tsx     # Home dashboard
+│   ├── TasksPage.tsx     # Task management page
+│   ├── AssistantPage.tsx # AI assistant chat interface
+│   ├── CalendarPage.tsx  # Calendar view
+│   ├── FocusPage.tsx     # Focus/Pomodoro timer
+│   ├── NotesPage.tsx     # Notes and journal
+│   └── SettingsPage.tsx  # User settings
+├── store/                # Zustand state management
+│   ├── taskStore.ts      # Task-related state
+│   ├── userStore.ts      # User authentication and preferences
+│   ├── assistantStore.ts # AI assistant state
+│   └── themeStore.ts     # UI theme state
+├── services/             # API and external services
+├── hooks/                # Custom React hooks
+├── utils/                # Utility functions
+├── types/                # TypeScript type definitions
+└── assets/               # Static assets
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Login Credentials (Demo)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For demonstration purposes, you can use any email/password combination to log in, or use the Google/Facebook buttons for quick access.
 
-## Learn More
+## Usage Examples
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Creating a task with AI**: Type "Remind me to buy milk tomorrow at 5 PM" in the AI Assistant
+- **Starting a focus session**: Navigate to the Focus page and start a Pomodoro timer
+- **Adding a quick task**: Use the quick add feature on the Dashboard
+- **Setting task priorities**: Create or edit tasks and set their priority levels
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Enhancements
+
+- **Voice Command Support**: Hands-free task creation and management
+- **Google Calendar Integration**: Sync with your existing calendar
+- **Data Visualization**: More detailed productivity analytics
+- **Mobile App**: Native mobile experience with push notifications
+- **AI Improvements**: Better natural language understanding and predictive suggestions
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
